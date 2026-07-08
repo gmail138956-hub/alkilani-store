@@ -1,0 +1,8 @@
+{
+    "name": "alkilani-store",
+    "description": "متجر الكيلاني للكهرباء والإضاءة",
+    "type": "project",
+    "require": {
+        "php": ">=7.4"
+    }
+}
