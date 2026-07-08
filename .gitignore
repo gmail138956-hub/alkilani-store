@@ -1,0 +1,58 @@
+# ==========================================
+# ملفات لتجاهلها في Git
+# ==========================================
+
+# ملفات البيئة والخصوصية
+.env
+.env.local
+.env.*.local
+
+# مجلدات التحميل (الصور)
+/uploads/products/*.jpg
+/uploads/products/*.png
+/uploads/products/*.gif
+/uploads/products/*.webp
+/uploads/products/*.jpeg
+!/uploads/products/.gitkeep
+
+# ملفات السجلات
+*.log
+*.sqlite
+*.db
+
+# ملفات النظام
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# مجلدات IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# مجلدات الـ Cache
+cache/
+tmp/
+temp/
+
+# ملفات الـ Composer
+vendor/
+composer.lock
+
+# ملفات الـ Node
+node_modules/
+package-lock.json
+
+# ملفات الـ PHP
+error_log
+*.old
+*.bak
+
+# ملفات الـ ZIP
+*.zip
+*.rar
+*.7z
+
+# ملفات الـ Backup
+*.backup
+*.sql

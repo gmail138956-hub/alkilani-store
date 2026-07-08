@@ -1,0 +1,25 @@
+# ==========================================
+# Render Deployment Configuration
+# ==========================================
+
+services:
+  - type: web
+    name: alkilani-store
+    env: php
+    buildCommand: |
+      composer install --no-dev
+      cp .env.example .env
+    startCommand: |
+      php -S 0.0.0.0:10000 -t ./
+    envVars:
+      - key: DB_HOST
+        value: your-database-host.render.com
+      - key: DB_NAME
+        value: alkilani_store
+      - key: DB_USER
+        value: alkilani_user
+      - key: DB_PASS
+        value: your_strong_password
+      - key: SITE_URL
+        value: https://alkilani-store.onrender.com
+    healthCheckPath: /health.php
