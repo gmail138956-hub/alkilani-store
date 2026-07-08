@@ -1,5 +1,5 @@
 {
-    "name": "alkilani-store",
+    "name": "alkilani/store",
     "description": "متجر الكيلاني للكهرباء والإضاءة",
     "type": "project",
     "require": {
