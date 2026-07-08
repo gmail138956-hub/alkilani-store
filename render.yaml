@@ -10,7 +10,7 @@ services:
       composer install --no-dev
       cp .env.example .env
     startCommand: |
-      php -S 0.0.0.0:10000 -t ./
+      php -S 0.0.0.0:$PORT -t ./
     envVars:
       - key: DB_HOST
         value: your-database-host.render.com
